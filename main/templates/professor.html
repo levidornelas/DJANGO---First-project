@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professores</title>
+  <link rel="stylesheet" href="{% static 'css/main_style.css' %}">
+</head>
+<body>
+  <div class="logo">
+    <a href="{% url 'index' %}"><img src="{% static 'images/senac.png' %}"></a>
+    <h1> <a href="{% url 'index' %}">Página inicial</a></h1>
+    </div>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Salário</th>
+      <th>Carga Horária</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ professores.id }}</td>
+      <td><a href="{% url 'index' %}">{{ professores.nome }}</a></td>
+      <td>{{ professores.email }}</td>
+      <td>{{ professores.salario }}</td>
+      <td>{{ professores.carga_horaria }}</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

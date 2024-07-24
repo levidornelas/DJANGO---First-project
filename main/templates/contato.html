@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{% static 'css/main_style.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de contato</title>
+</head>
+<body>
+  <div class="logo">
+    <a href="{% url 'index' %}"><img src="{% static 'images/senac.png' %}"></a>
+    <h1> <a href="{% url 'index' %}">Página inicial</a></h1>
+    <h1>Contato</h1>
+    </div>
+    <h2>E-mail: levidornelas2006@gmail.com</h2>
+    <a href="https://github.com/levidornelas" target="_blank"><h2>Github</h2></a>
+    <a href="https://www.linkedin.com/in/levi-dornelas-1834592b7/" target="_blank"><h2>Linkedin</h2></a>
+</body>
+</html>
